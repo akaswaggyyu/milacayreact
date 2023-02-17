@@ -17,6 +17,8 @@ import FooterComponent from "./components/FooterComponent";
 
 const { Header, Footer, Content } = Layout;
 
+const pdf = "%PUBLIC_URL%/menu.pdf";
+
 const headerStyle = {
   textAlign: "center",
   color: "#fff",
@@ -47,6 +49,7 @@ function App() {
         <Route path="/about" element={<AboutScreen />} />
         <Route path="/menu" element={<MenuScreen />} />
         <Route path="/contact" element={<ContactScreen />} />
+        <Route path="/menu.pdf" element={pdf} />
       </Route>
     )
   );
